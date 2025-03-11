@@ -29,8 +29,10 @@ pointLight.position.set(3,5,5);
 pointLight.rotation.set(45,45,0);
 scene.add(pointLight);
 
+/*
 const lightHelper = new THREE.PointLightHelper(pointLight);
 scene.add(lightHelper);
+*/
 
 //Controls
 const Controls = new OrbitControls(camera, renderer.domElement);
