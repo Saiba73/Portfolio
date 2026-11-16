@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0b0e;
+    color: #ffffff;
+}
+
+.threejs {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    outline: none;
+    z-index: 1;
+}
+
+.portfolio-container {
+    position: relative;
+    z-index: 2;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background: rgba(18, 18, 24, 0.65);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+    background: linear-gradient(135deg, #00bcd4, #e91e63);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: #a0aec0;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+.card {
+    background: rgba(18, 18, 24, 0.65);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 28px 32px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 12px;
+    color: #00bcd4;
+}
+
+.card p, .card li {
+    color: #cbd5e0;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.card li:last-child {
+    border-bottom: none;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .portfolio-container {
+        padding: 16px;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+}
